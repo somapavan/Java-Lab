@@ -1,0 +1,26 @@
+class overload{
+    void test()
+    {
+        System.out.println("No parameters");
+    }
+    void test(int a)
+    {
+        System.out.println("a= "+a);
+    }
+    void test(int a, int b)
+    {
+        System.out.println("a and b= " +a+b);
+    }
+
+ class method_over {
+    public static void main(String[] args) {
+        overload ob=new overload();
+        int res;
+        ob.test();
+        ob.test(20);
+        ob.test(10,20);
+        res=ob.test(7);
+        System.out.println("result= "+res);
+    }
+}
+}
